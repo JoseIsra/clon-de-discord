@@ -1,0 +1,20 @@
+
+.channels:hover > h4{
+color:white;
+background-color: #40464b;
+}
+
+.channels > h4{
+    display:flex;
+    font-size:0.8rem;
+    padding-left: 15px;
+    align-items: center;
+    background-color: #2f3135;
+    color:gray;
+    cursor:pointer;
+}
+.channels_hash
+{
+    font-size:15px;
+    padding:8px;
+}
