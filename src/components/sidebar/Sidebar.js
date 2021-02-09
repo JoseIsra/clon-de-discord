@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import './Sidebar.css';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AddIcon from '@material-ui/icons/Add';
@@ -10,8 +11,12 @@ import MicIcon from '@material-ui/icons/Mic';
 import HeadsetIcon from '@material-ui/icons/Headset';
 import SettingsIcon from '@material-ui/icons/Settings';
 import { Channels } from './channels/Channels';
+import { selectUser } from '../../features/userSlice';
 
 export const Sidebar = () => {
+    const user = useSelector(selectUser);
+    
+
     return (
         <div className="sidebar">
             <div className="sidebar__top">
@@ -52,10 +57,10 @@ export const Sidebar = () => {
 
 
                 <div className="sidebar__profile">
-                    < Avatar src="https://cms-assets.tutsplus.com/uploads/users/48/posts/29789/image/js-product.png" />
+                    < Avatar src={user.photoURL} />
                     <div className="sidebar__profileInfo">
-                        <h3>israelSayHi</h3>
-                        <p>#theidHere</p>
+                        <h3>{user.displayName}}</h3>
+                        <p>{user.uid.substring(0,4)}</p>
                         </div>
                     <div className="sidebar__profileIcons">
                         <MicIcon />
