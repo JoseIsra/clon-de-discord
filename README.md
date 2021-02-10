@@ -6,7 +6,7 @@
   - Reactjs
   - firebase
     
-  **Beneficios del ejercicio:
+  ** Beneficios del ejercicio:
  - [x] Entender la lógica del manejo de estados utilizando Redux
  - [x] Manejo de una base de datos no relacional utilizando firebase
  - [x] Afianzar los conocimientos de Reactjs que ya se tienen. 
