@@ -17,3 +17,4 @@
  
  <img src="/capturas/capturaclon.PNG" width="100%" />
  
+[Reactjs, Redux, Nodejs, Expressjs]
